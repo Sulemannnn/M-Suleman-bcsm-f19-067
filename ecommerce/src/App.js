@@ -57,7 +57,7 @@ function App() {
     setShowCart(value)
   }
     return (
-    <div className="App">
+      <div className="App">
     <Header count ={cart.length} handle={handle}></Header>
     {
       showCart?

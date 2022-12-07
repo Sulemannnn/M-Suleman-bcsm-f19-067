@@ -10,6 +10,8 @@ function CartList({cart}) {
 
     return (
         <div className='flex'>
+         
+            
             {
                 CART?.map((cartItem, cartindex) => {
                     return (
@@ -34,11 +36,16 @@ function CartList({cart}) {
                                 }}
                             >+</button>
                             <p className='rtxt'> Rs. {cartItem.price * cartItem.quantity} </p>
+                            
                         </div>
+
+                        
                     )
+                    
                 })
+                
             }
-            <div className='card2'>
+                   <div className='card2'>
             <p className='tot'> Total  </p>
             <p className='tot1'> Rs.  <span></span>
                 {
@@ -47,7 +54,9 @@ function CartList({cart}) {
             </p>
             <button className='chkbtn'> Checkout <FaArrowRight style={{position:'relative' , top:'3' , left:'2'}}/></button>
             </div>
+        
         </div >
+
     )
 }
 

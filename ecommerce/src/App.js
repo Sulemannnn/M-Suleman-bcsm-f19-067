@@ -10,7 +10,7 @@ function App() {
       name: 'TRQ White Shoes',
       category: 'Shoes',
       seller: 'AMZ Seller Ghz',
-      price: 1999
+      price: 2000
     },
     {
       url: 'https://5.imimg.com/data5/KC/PC/MY-38629861/dummy-chronograph-watch-500x500.jpg',
@@ -58,12 +58,20 @@ function App() {
   }
     return (
       <div className="App">
-    <Header count ={cart.length} handle={handle}></Header>
+    <Header count ={cart.length} handle={handle}>
+    
+    </Header>
+
+ <div>
+  
+ </div>
     {
       showCart?
     <CartList cart={cart}></CartList>:
     <Products product={product} addToCart={addToCart} ></Products>
+    
     }
+   
     </div>
   );
 }

@@ -12,7 +12,6 @@ function Header(props) {
   <sup className='cartxt'  >{props.count}</sup>
 </li>
 </ul>
-
     </div>
   );
 }
